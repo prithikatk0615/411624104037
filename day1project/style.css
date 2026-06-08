@@ -9,19 +9,22 @@ h1{
     margin:20px;
 }
 
- img{
+img{
     height:500px;
     width:500px;
-    /* border-radius: 700px;
-    background-color:darkgreen; */
- } 
+    background-color:rgb(189, 93, 109);
+    padding: 50px;
+}
+
+
 
 video{
-    width: 900px;
+    height:auto;
+    width: 100%;
 }
 
 .imgvideo{
-    background-color:beige;
+    background-color:rgb(166, 29, 29);
     padding: 50px;
 }
 
@@ -33,11 +36,6 @@ video{
 
 #p2{
     font-style:italic;
-}
-
-nav{
-    display:flex;
-    flex-direction:row;
 }
 
 ol{
@@ -79,11 +77,6 @@ form{
     border-radius: 100px;
 }
 
-.grid{
-    display:grid;
-    width: 100%;
-    grid-template-columns: : 33% 33% 33%;
-}
 
 #one{
     grid-row:1/2;
@@ -119,4 +112,22 @@ form{
 .chocolate{
     display: flex;
     grid-template-columns: 50% 50%;
+}
+
+@media (min-width:1204){
+    nav{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+}
+
+nav{
+    display: flex;
+    flex-direction:column;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: : 33% 33% 33%;
 }
